@@ -2,7 +2,9 @@
 
 <?php
 
+    include __DIR__  . '/db.php';
 
+    var_dump($dischi[0]['title'])
 
 ?>
 
@@ -17,7 +19,35 @@
 </head>
 <body>
 
+    <div class="container-general">
 
+        <div class="header">
+
+            <h1>Dischi musicali </h1>
+
+        </div>
+
+        <div class="corpo">
+
+            <?php  foreach($dischi as $disco) { ?>
+
+            <div class="box">
+
+                <img class="box--poster" src="<?php echo  $disco['poster']  ?>" alt="">
+
+                <h2 class="box--title" ><?php echo  $disco['title']  ?></h2>
+
+                <h4 class="box--author" ><?php echo  $disco['author']  ?></h4>
+
+                <span class="box--year" ><?php echo  $disco['year']  ?></span>
+
+            </div>
+
+            <?php } ?>
+
+        </div>
+
+    </div>
 
 </body>
 </html>
