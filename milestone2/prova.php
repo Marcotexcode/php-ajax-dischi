@@ -19,11 +19,11 @@
 
         </div>
 
-        <h2 v-model="ricerca">Rock</h2>
+        <h2>Rock</h2>
 
         <div class="corpo">
 
-            <div class="container-box" v-for="dischi in album" v-if="dischi.visible">
+            <div class="container-box" v-for="dischi in album" v-if="dischi.genere == 'rock'">
 
                 <img class="box--poster" :src="dischi.poster" :alt="dischi.title">
 
@@ -47,7 +47,7 @@
         
         <div class="corpo">
 
-            <div class="container-box" v-for="dischi in album">
+            <div class="container-box" v-for="dischi in album" v-if="dischi.genere == 'pop'">
 
                 <img class="box--poster" :src="dischi.poster" :alt="dischi.title">
 
@@ -69,7 +69,7 @@
         
         <div class="corpo" >
 
-            <div class="container-box" v-for="dischi in album">
+            <div class="container-box" v-for="dischi in album" v-if="dischi.genere == 'metal'">
 
                 <img class="box--poster" :src="dischi.poster" :alt="dischi.title">
 

@@ -28,28 +28,4 @@ const app = new Vue({
 
     },
 
-    methods: {
-
-        search() {
-
-            this.album.forEach((element) => {
-                
-                if (element.genere.toLowerCase().includes(this.ricerca.toLowerCase())) {
-
-                    element.visible = true;
-
-                } else {
-
-                    element.visible = false;
-
-                }
-
-                console.log(element);
-
-            });
-            
-        }
-
-    }
-
 });
