@@ -2,7 +2,7 @@
 
 <?php
 
-    include __DIR__  . '/db.php';
+    include __DIR__  . '/db/dischi.php';
 
 ?>
 
@@ -32,11 +32,11 @@
      
                 <div class="container-box">
 
-                    <img class="box--poster" src="<?php echo  $disco['poster']  ?>" alt="">
+                    <img class="box--poster" src="<?php echo  $disco['poster']  ?>" alt="<?php echo  $disco['title'] ?>">
 
                     <div class="textBox">
 
-                        <h2 class="box--title"><?php echo  $disco['title']  ?></h2>
+                        <h2 class="box--title"><?php echo  $disco['title'] ?></h2>
 
                         <h4 class="box--author" >Autore: <?php echo  $disco['author']  ?></h4>
 
