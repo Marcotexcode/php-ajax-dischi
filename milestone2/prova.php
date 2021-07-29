@@ -14,10 +14,38 @@
     <div id="app" class="container-general">
     
         <div class="header">
+
             <h2>elenco album</h2>
+
         </div>
 
-        <div class="corpo" >
+        <h2 v-model="ricerca">Rock</h2>
+
+        <div class="corpo">
+
+            <div class="container-box" v-for="dischi in album" v-if="dischi.visible">
+
+                <img class="box--poster" :src="dischi.poster" :alt="dischi.title">
+
+                <div class="textBox">
+
+                    <h2 class="box--title">{{dischi.title}}</h2>
+
+                    <h4 class="box--author">Autore: {{dischi.author}} </h4>
+
+                    <span class="box--year">Anno: {{dischi.year}} </span>
+
+                    <span class="box--year">genere: {{dischi.genere}} </span>
+
+                </div>
+
+            </div>  
+
+        </div>
+
+        <h2>Pop</h2>
+        
+        <div class="corpo">
 
             <div class="container-box" v-for="dischi in album">
 
@@ -37,6 +65,27 @@
 
         </div>
 
+        <h2>Metal</h2>
+        
+        <div class="corpo" >
+
+            <div class="container-box" v-for="dischi in album">
+
+                <img class="box--poster" :src="dischi.poster" :alt="dischi.title">
+
+                <div class="textBox">
+
+                    <h2 class="box--title">{{dischi.title}}</h2>
+
+                    <h4 class="box--author">Autore: {{dischi.author}} </h4>
+
+                    <span class="box--year">Anno: {{dischi.year}} </span>
+
+                </div>
+
+            </div>  
+
+        </div>
 
     </div>
 
