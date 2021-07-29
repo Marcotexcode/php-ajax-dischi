@@ -15,11 +15,11 @@
     
         <div class="header">
 
-            <h2>elenco album</h2>
+            <h2 class="header-titolo">elenco album</h2>
 
         </div>
 
-        <h2>Rock</h2>
+        <h2 class="titolo-genere">Rock</h2>
 
         <div class="corpo">
 
@@ -35,7 +35,7 @@
 
                     <span class="box--year">Anno: {{dischi.year}} </span>
 
-                    <span class="box--year">genere: {{dischi.genere}} </span>
+                    <span class="box--genere">Genere: {{dischi.genere}} </span>
 
                 </div>
 
@@ -43,7 +43,7 @@
 
         </div>
 
-        <h2>Pop</h2>
+        <h2 class="titolo-genere">Pop</h2>
         
         <div class="corpo">
 
@@ -59,13 +59,15 @@
 
                     <span class="box--year">Anno: {{dischi.year}} </span>
 
+                    <span class="box--genere">Genere: {{dischi.genere}} </span>
+
                 </div>
 
             </div>  
 
         </div>
 
-        <h2>Metal</h2>
+        <h2 class="titolo-genere">Metal</h2>
         
         <div class="corpo" >
 
@@ -80,6 +82,8 @@
                     <h4 class="box--author">Autore: {{dischi.author}} </h4>
 
                     <span class="box--year">Anno: {{dischi.year}} </span>
+
+                    <span class="box--genere">Genere: {{dischi.genere}} </span>
 
                 </div>
 
